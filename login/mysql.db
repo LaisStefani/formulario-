@@ -1,0 +1,33 @@
+-- phpMyAdmin SQL Dump
+-- version 2.6.4-pl2
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tempo de Geração: Jan 16, 2006 as 01:56 AM
+-- Versão do Servidor: 4.0.25
+-- Versão do PHP: 4.3.11
+--
+-- Banco de Dados: `phpx_logusi`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(8) NOT NULL auto_increment,
+  `nome` varchar(200) NOT NULL default '',
+  `mail` varchar(200) NOT NULL default '',
+  `login` varchar(200) NOT NULL default '',
+  `senha` varchar(200) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM AUTO_INCREMENT=3 ;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` VALUES (2, 'Milton Teles', 'phpx@phpx.com.br', 'phpx', 'f4cc399f0effd13c888e310ea2cf5399');
+
